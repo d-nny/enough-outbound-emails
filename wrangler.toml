@@ -1,0 +1,19 @@
+name = "enough-outbound-emails"
+main = "src/index.js"
+compatibility_date = "2023-07-10"
+
+[[r2_buckets]]
+binding = "EMAIL_BUCKET"
+bucket_name = "enough-mail"
+
+[[services]]
+binding = "EMAIL_PROCESSOR"
+service = "enough-eml-to-db"
+
+# Environment variables
+[vars]
+DEFAULT_FROM_ADDRESS = "noreply@enoughgambling.com"
+
+# Secrets that will need to be set with wrangler
+# wrangler secret put SMTP2GO_API_KEY
+# SMTP2GO_API_KEY = "your-smtp2go-api-key"
