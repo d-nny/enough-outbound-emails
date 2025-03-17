@@ -51,7 +51,7 @@ Content-Type: application/json
 
 ### R2 Bucket
 
-- `EMAIL_BUCKET`: R2 bucket for storing email files
+- `EMAIL_BUCKET`: R2 bucket for storing email files.
 
 ## Setup Instructions
 
