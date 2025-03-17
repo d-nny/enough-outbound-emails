@@ -98,7 +98,7 @@ ${body}`;
               },
               body: JSON.stringify({ emailPath })
             }
-          );
+          ));
           console.log(`Sent email processed for database: ${emailPath}`);
         } catch (processorError) {
           console.error(`Failed to process sent email: ${processorError.message}`);
